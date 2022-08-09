@@ -34,16 +34,16 @@ function isPrime(number) {
     return;
   }
   if (number % 1 !== 0) {
-    console.log("Number is not integer");
+    console.log(`Number ${number} is not integer`);
     return;
   }
   if (number > 1) {
     for (let i = 2; i < number; i++) {
       if (number % i === 0) {
-        console.log("Number is not prime");
+        console.log(`Number ${number} is not prime`);
         return;
       }
     }
-    console.log("Number is prime");
   }
+  console.log(`Number ${number} is prime`);
 }
